@@ -1,0 +1,60 @@
+@import '../../../styles/colors.scss';
+
+.login {
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    background-color: $cl-background;
+  }
+
+  &-form {
+    background-color: $cl-white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba($cl-black, .1);
+    padding: 2rem;
+    width: 400px;
+  }
+
+  &-logo {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 100px;
+  }
+
+  &-formGroup {
+    margin-bottom: 20px;
+  }
+
+  &-inputField {
+    width: 100%;
+    padding: 0.625rem;
+    border: 1px solid $cl-grey;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  &-btn {
+    width: 100%;
+    padding: 0.625rem;
+    background-color: $cl-primary;
+    border: none;
+    border-radius: 4px;
+    color: $cl-white;
+    cursor: pointer;
+    transition: background-color .3s ease;
+
+    &:hover {
+      background-color: darken($cl-primary, 10%);
+    }
+  }
+
+  &-errorMessage {
+    margin-top: 0.25rem;
+    font-size: .75rem;
+    color: $cl-error;
+  }
+}
+
